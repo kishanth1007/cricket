@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            margin: 0;
+            background: linear-gradient(to right,lightyellow,yellow);
+            background-size: cover;
+        }
+        .cart {
+            background: black;
+            color: red;
+            padding: 12px;
+            text-align: top right;
+            font-size: 18px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-image: url("background.png");
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        btn{
+            border: none;
+            padding: 8px 15px;
+            cursor:crosshair;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .buy-btn {
+            background: blueviolet;
+            color: white;
+        }
+
+        .cart-btn {
+            background:brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        Cart Items: <span id="cartCount">0</span>   
+    </div>
+    <div class="container">
+
+        <div class="card">
+        <img src="CHAIN.webp">
+        <h3>High-quality gold-plated chain featuring the Chennai Super Kings logo; perfect for fans</h3>
+        <p>Price:₹2000<br>        
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="BOTTLE.webp">
+        <h3>1L Plastic Water Bottle with CSK Logo; keeps drinks hot/cold for hours.
+        </h3>
+        <p>Price:₹500<br>
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="BAT.jpg">
+        <h3>High-quality cricket bat made from premium willow; ideal for players of all levels.With Dhoni Signature</h3>
+        <p>Price:₹1,69,990<br>
+        
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="keychain.jpg">
+        <h3>Keychain with CSK logo; perfect for fans</h3>
+        <p>Price: ~₹300<br>
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="Watch.jpg">
+        <h3> Stainless steel watch with CSK logo; perfect for fans</h3>
+        <p>Price:₹67,990<br>
+        
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="Dube.jpg">
+        <h3>Official Dube Jersey 2023, High-quality fabric, Comfortable fit, Authentic design.</h3>
+        <p>Price:₹64,990<br>
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="jadeja.jpg">
+        <h3>Official Jadeja Jersey 2023, High-quality fabric, Comfortable fit, Authentic design</h3>
+        <p>Price:₹63,990<br></p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="JERSEY.jpg">
+        <h3>Official Dhoni Jersey 2023, High-quality fabric, Comfortable fit, Authentic design</h3>
+        <p>Price:₹72,200<br>
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+
+</body>
+</html>
